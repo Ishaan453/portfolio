@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ishaan Bhela</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="author" content="Ishaan Bhela">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">Ishaan Bhela</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <img class="avatar" src="assets/images/myself.jpeg" alt="Ishaan Bhela">
+            <h1>Ishaan Bhela</h1>
+            <p class="intro">
+                A passionate student at the Symbiosis Institute of Technology, eager to dive deeper into the world of software development. Skilled in Java, C++, and an avid learner with projects like Flappy Bird and Tic-tac-toe under my belt.
+            </p>
+            <a href="#projects" class="cta-btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;" data-progress="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;" data-progress="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Android Development</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;" data-progress="75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>HTML/CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;" data-progress="60%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img class="pro_img" src="assets/images/geeks_for_movies_icon.png" alt="GeeksForMovies">
+                    <h3>GeeksForMovies</h3>
+                    <p>An Android app that brings movie data to users with a streamlined, user-friendly interface. This app integrates real-time data from The Movie Database (TMDB) API, allowing users to explore trending, top-rated, and popular films globally.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.ishaanbhela.geeksformovies" target="_blank" class="project-link">Download on Google Play Store!</a>
+                </div>
+
+                <div class="project-card">
+                    <img class="pro_img" src="assets/images/phonic.png" alt="Phonic Smart">
+                    <h3>Phonic Smart</h3>
+                    <p>Jolly Phonics is a scheme that teaches English to children using songs and actions for better letter recognition.</p>
+                    <a href="https://github.com/Ishaan453/PhonicSmart" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/Ishaan453" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ishaan-bhela-93879b21a/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:ishaanbhela@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ishaan Bhela. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
